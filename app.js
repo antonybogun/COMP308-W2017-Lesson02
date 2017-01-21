@@ -1,19 +1,18 @@
-const connect = require('connect');
-const app = connect();
+let connect = require('connect');
 
-function serverStart(req, res) {
-    res.setHeader('Content-Type', 'text/plain');
-    res.end('Server started successfully');
-};
+let app = connect();
+const port = 3000;
 
-function helloWorld(req, res){
+app.use('/hello', (req, res) => {
     res.setHeader('Content-Type', 'text/plain');
     res.end('Hello World');
-};
+});
 
-app.use('/hello', helloWorld);
-app.use('/', serverStart);
+app.use('/', (req, res) => {
+    res.setHeader('Content-Type', 'text/plain');
+    res.end('Server started successfully');
+});
 
 app.listen(3000);
 
-console.log('Server running at http://localhost:3000/');
+console.log('Server running at http://localhost:' + port + '/');

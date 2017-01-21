@@ -7,5 +7,20 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Tony Bogun",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "connect": "^3.5.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antonybogun/COMP308-W2017-Lesson02.git"
+  },
+  "keywords": [
+    "NodeJS"
+  ],
+  "bugs": {
+    "url": "https://github.com/antonybogun/COMP308-W2017-Lesson02/issues"
+  },
+  "homepage": "https://github.com/antonybogun/COMP308-W2017-Lesson02#readme"
 }
